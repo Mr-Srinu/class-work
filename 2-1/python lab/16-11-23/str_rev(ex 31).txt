@@ -1,0 +1,14 @@
+class str_reverse:
+    def rev(self,s):
+        w=s.split(' ')
+        r=' '.join(reversed(w))
+        return r
+    
+s=input("enter a string: ")
+obj=str_reverse()
+print(obj.rev(s))
+
+==op==
+
+enter a string: Information Tech
+Tech Information

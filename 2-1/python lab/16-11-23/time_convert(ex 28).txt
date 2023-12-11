@@ -1,0 +1,23 @@
+class time:
+    def __init__(self,sec):
+        self.sec=sec
+    def convert_to_minutes(self):
+        sec=self.sec%60
+        mini=self.sec//60
+        return f"{mini}:{sec}"
+    def convert_to_hours(self):
+        hours=self.sec//3600
+        rem_s=self.sec%3600
+        mini=rem_s//60
+        sec=rem_s%60
+        return f"{hours}:{mini:02d}:{sec:02d}"
+sec=int(input("enter number of seconds: "))
+obj=time(sec)
+print(obj.convert_to_minutes())
+print(obj.convert_to_hours())
+
+==op==
+
+enter number of seconds: 2500
+41:40
+0:41:40
