@@ -1,0 +1,28 @@
+<html>
+<body>
+<h2>javascript array methods</h2>
+<p>the toString() method returns an array as a coma seperated string:</p>
+<p>the shift() method returns the element that was shifted out.</p>
+<p> unshift() method adds a new element to an array (at the beginning),and"unshifts"older elements:
+<p id="demo"></P>
+<p id="demo1"></P>
+<p id="demo2"></P>
+<p id="demo3"></P>
+<p id="demo4"></P>
+<p id="demo5"></P>
+<p id="demo6"></P>
+<p id="demo7"></P>
+<script>
+const fruits = ["banana","orange","apple","mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+document.getElementById("demo1").innerHTML = fruits.join(" * ");
+fruits.pop();
+document.getElementById("demo3").innerHTML = fruits;
+fruits.push("kiwi");
+document.getElementById("demo4").innerHTML = fruits;
+document.getElementById("demo5").innerHTML = fruits.shift();
+document.getElementById("demo6").innerHTML = fruits.unshift("lemon");
+document.getElementById("demo7").innerHTML = fruits;
+</script>
+</body>
+</html>

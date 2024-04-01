@@ -1,0 +1,33 @@
+<html>
+<body>
+<h2>JavaScript Array Methods</h2>
+<p>The concat() method merges (concatenates) arrays:</p>
+<p>The splice() method adds new items to an array.
+Example
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2,0,"Lemon", "Kiwi");
+The first parameter (2) defines the position where new elements should be added (spliced in).
+The second parameter (0) defines how many elements should be removed.
+The rest of the parameters ("Lemon", "Kiwi") define the new elements to be added.</p>
+<p id = "demo"></p>
+<p id = "demo1"></p>
+<p id = "demo2"></p>
+<p id = "demo3"></p>
+<p id = "demo4"></p>
+<p>The slice() method slices out apiece of an array into a new array.</p>
+<script>
+const array1=["cecilie","lone"];
+const array2=["emil","tobias","linus"];
+const array3=["robin","morgan"];
+const mychildren=array1.concat(array2,array3);
+document.getElementById("demo").innerHTML=mychildren;
+const fruits=["bananna","orange","apple","mango"];
+document.getElementById("demo1").innerHTML="original array:<br>"+fruits;
+let removed=fruits.splice(2,2,"lemon","kiwi");
+document.getElementById("demo2").innerHTML="new array:<br>"+fruits;
+document.getElementById("demo3").innerHTML="removed items:<br>"+removed;
+const citrus=fruits.slice(3);
+document.getElementById("demo4").innerHTML=fruits+"<br><br>"+citrus;
+</script>
+</body>
+</html>
